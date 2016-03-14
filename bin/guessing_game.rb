@@ -24,6 +24,9 @@ class GuessingGame
     if direction.provide_direction == true
       puts "Winner! The number was #{number.computer_number}"
       break
+    elsif guesses.user_guess.length == 5
+      puts "Sorry, you have guessed too any times. You lose."
+      break
     else
       puts "#{direction.provide_direction}"
     end
